@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nudi', function (Blueprint $table) {
+        Schema::create('usuario', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('tamaño');
-            $table->string('sociabilidad');
-            $table->string('dieta');
-            $table->string('imagen');
             $table->timestamps();
         });
     }
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nudi');
+        Schema::dropIfExists('usuario');
     }
 };

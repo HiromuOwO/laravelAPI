@@ -33,7 +33,9 @@ class nudiController extends Controller
             'nombre' => 'required',
             'tamaño'=> 'required',
             'sociabilidad' => 'required',
-            'dieta' => 'required'
+            'dieta' => 'required',
+            'imagen' => 'required'
+            
         ]);
 
         if($validator->fails()){
@@ -50,7 +52,8 @@ class nudiController extends Controller
             'nombre' => $request->nombre,  
             'tamaño' => $request->tamaño,
             'sociabilidad' => $request->sociabilidad,
-            'dieta' => $request->dieta
+            'dieta' => $request->dieta,
+            'imagen' => $request->imagen
         ]);
 
         if (!$nudis){
@@ -131,7 +134,8 @@ class nudiController extends Controller
             'nombre' => 'required',
             'tamaño' => 'required',
             'sociabilidad' => 'required',
-            'dieta' => 'required'
+            'dieta' => 'required',
+            'imagen' => 'required'
            
         ]);
 
@@ -147,7 +151,22 @@ class nudiController extends Controller
         }
 
         $nudis->nombre = $request->nombre;
+        $nudis->tamaño = $request->tamaño;
+        $nudis->sociabilidad = $request->sociabilidad;
+        $nudis->dieta = $request->dieta;
+        $nudis->imagen = $request->imagen;
 
+        $nudis->save();
+
+        $data = [
+            'message' => 'Especie actulizada',
+            'nudibrancquio' => $nudis,
+            'status' => 200
+        ];
+
+        return response()->json($data,200);
 
     }
+
+    
 }

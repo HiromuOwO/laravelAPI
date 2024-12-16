@@ -16,7 +16,8 @@ class Nudi extends Model
         'nombre',
         'tamaño',
         'sociabilidad',
-        'dieta'
+        'dieta',
+        'imagen'
 
     ];
 
