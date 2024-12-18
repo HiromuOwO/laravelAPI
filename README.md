@@ -1,4 +1,4 @@
-## Equipo 18     Lopez Garcia Lourdes Glorian    Perez de Jesus Edith
+## Equipo 18  ---   Lopez Garcia Lourdes Gloria ---   Perez de Jesus Edith
 
 
 # Creacion de una API con Laravel
