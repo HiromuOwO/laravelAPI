@@ -1,3 +1,6 @@
+## Equipo 18     Lopez Garcia Lourdes Glorian    Perez de Jesus Edith
+
+
 # Creacion de una API con Laravel
 ## 1.- Creacon del proyecto
  Creamos un nuevo proyecto de Laravel
